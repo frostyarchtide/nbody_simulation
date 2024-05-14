@@ -1,0 +1,17 @@
+[package]
+name = "nbody_simulation"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+notan = "0.12.0"
+notan_egui = "0.12.0"
